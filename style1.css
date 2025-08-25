@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+body{
+    font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+     padding: 40px;
+     text-align: justify
+}
+.tabulka{
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+tr:nth-child(2n) {background-color: pink;}
+tr:nth-child(1) {font-weight: bold;}
+
+tr:hover:not(:first-child) {
+    background-color: rgb(247, 117, 138);
+    color: whitesmoke;
+    cursor: pointer;
+}
+tr:nth-child(1) td:nth-child(n+3)::after{
+    counter-increment: kolo;
+    content: Kolo counter(kolo);
+}
+td {
+    padding: 7px;
+ }

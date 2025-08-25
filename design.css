@@ -1,0 +1,23 @@
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td {
+    width: 90px;
+    height: 90px;
+    border: 1px solid black;
+    background: aqua;
+    
+}
+
+tr:nth-child(even) td:nth-child(odd){
+  background: pink;
+}
+
+
+tr:nth-child(odd) td:nth-child(even){
+  background: pink;
+}
+
+

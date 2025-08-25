@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+* {
+    box-sizing: border-box;
+}
+body{
+        background-color: blanchedalmond;
+        padding: 10px;
+        font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+  }
+.header{
+    padding:40px;
+    text-align: center;
+    background-image: url(img/japonsko.jpg);
+    border-style: solid ;
+}
+
+.header h1{
+    color: black;
+}
+
+
+.topnav {
+    background-color:#ea542f;
+    border-style: solid ;
+    border-top-style: none;
+    overflow: hidden;}
+.topnav a {
+    display: block;
+    float: left;
+    padding: 14px 18px;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+.topnav :hover {
+    background-color: whitesmoke;
+    color: black;
+    cursor:pointer;
+     
+}
+
+
+.footer {
+    color: black;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    margin-top: auto;
+  }
+
+
+.card{
+    background-color: rgb(247, 188, 188);
+    padding-bottom: 0;
+    text-align: center;
+    border: black;
+    border-style: solid;
+    border-top-style: none;
+    margin-left: auto;
+    margin-top: auto;
+  }
+
+  .container {
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+  
+  
+  
+  .image {
+    opacity: 1;
+    display: block;
+    margin: auto;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    
+  }
+  .foto {
+    opacity: 1;
+    display: block;
+    margin: auto;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+
+  .text {
+    background-color:#ea542f;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+.cursor{
+    position: relative;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 20px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
